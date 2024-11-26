@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonic: Shifting Focus to Global Audio Perception in Audio-driven Portrait Animation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Sonic: Shifting Focus to Global Audio Perception in Portrait Animation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Xiaozhong Ji</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Xiaobin Hu</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Zhihong Xu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Junwei Zhu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Chuming Lin</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Qingdong He</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Jiangning Zhang</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Donghao Luo</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Yi Chen</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Qin Lin</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Qinglin Lu</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Chengjie Wang</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tencent,</span>
+            <span class="author-block"><sup>2</sup>Zhejiang University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <span><b>TL;DR</b>: We propose a novel paradigm, dubbed as <b>Sonic</b>, to shift focus on the exploration of global audio perception. To effectively leverage global audio knowledge, we disentangle it into intra- and inter-clip audio perception and collaborate with both aspects to enhance overall perception. For the intra-clip audio perception, 1). <b>Context-enhanced audio learning</b>, in which long-range intra-clip temporal audio knowledge is extracted to provide facial expression and lip  motion priors implicitly expressed as the tone and speed of speech. 2). <b>Motion-decoupled controller</b>, in which the motion of the head and expression movement are disentangled and independently controlled by intra-audio clips. Most importantly, for inter-clip audio perception, as a bridge to connect the intra-clips to achieve the global perception, <b>Time-aware position shift fusion</b>, in which the global inter-clip audio information is considered and fused for long-audio inference via through consecutively time-aware shifted windows. </span>
+            <div class='responsive-image-container'>
+              <img src='static/teaser.png' alt='' />
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Generated Videos</h2>
+      <h4 class="text is-4">We propose a novel unified paradigm <b>without</b> the guidance of visual motion like <b>motion frames</b>, dubbed as Sonic, to focus on the exploration of <b>global audio perception</b>. Sonic produces vivid portrait animation videos given different styles of images and various types of audio inputs. The images and audios are collected from recent works or sourced from the Internet.
+      </h4>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-zuchongzhi">
+          <video poster="" id="zuchongzhi"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/zuchongzhi.png_talk_male_jobs_1_0.mp3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-zunzhe">
+          <video poster="" id="zunzhe"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/Steve-Jobs-768x768.jpg_talk_male_jobs_1_1.mp3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-einstein">
+          <video poster="" id="einstein"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/einstein.jpg_einstein.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-zunzhe">
+          <video poster="" id="zunzhe"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/10.png_10.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/5.png_5.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-hg">
+          <video poster="" id="hg"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/hg.jpeg_sing_male1.MP3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-zunzhe">
+          <video poster="" id="zunzhe"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/zunzhe.png_talk_male_time_2.mp3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-pyy">
+          <video poster="" id="pyy"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/pyy.jpg_talk_male_chinese.MP3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Stable Long Video Generation</h2>
+      <h2 class="text is-4">We show the generation of stable long videos ranging from 1 to 10 minutes, highlighting the effectiveness and ingenuity of our time-aware position shift fusion technique.</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/6.png_female_long.wav_audio_compress.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/nazha.png_talk_female_english.MP3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/11.png_11.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/female_diaosu.png_sing_female_rap.MP3_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/14.png_talk_male_law.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/elon.png_sing_male2.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-elon">
+          <video poster="" id="elon"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/leonnado.jpg_talk_male_wolf.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">More Video Results</h2>
+      <h2 class="text is-4">We exhibit more cases on stylized non-real-human and diverse resolution ratios, indicating the generalization of our Sonic well-adapted for non-real-human cases (e.g. stylized or cartoon characters) or multi-resolution ratios.</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-diverse_6">
+          <video poster="" id="diverse_6"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/diverse_6.mp4.png_sing_male_wukong.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-Steve">
+          <video poster="" id="Steve"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/kids_02_audio2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-trump">
+          <video poster="" id="trump"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/trump.png_talk_male_trump.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-anime3">
+          <video poster="" id="anime3"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/anime3.jpg_anime3.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-Steve">
+          <video poster="" id="Steve"  controls   playsinline height="100%">
+            <source src="./results/generated_videos/nonhuman_2.mp4.png_nonhuman_2.mp4.wav_audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison with open-source methods</h2>
+      <h2 class="text is-4">We compare Sonic with recent state-of-the-art methods. Sonic produces a wider range of expressions consistent with the audio and promotes more natural head movement.</h2>
+        <div class="item item-compare-sota1">
+          <video poster="" id="sota1"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_open_source/14.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-compare-sota2">
+          <video poster="" id="sota2"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_open_source/female_diaosu.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-compare-sota4">
+          <video poster="" id="sota4"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_open_source/xyjy.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison with closed-source methods</h2>
+      <h2 class="title is-5">We compare Sonic with closed-source methods such as EMO and Loopy. For EMO, we use the reference image and audio from their public demos.</h2>
+      <h2 class="text is-4">EMO occasionally exhibits sudden unnatural facial expressions around 7s, and the reflections in the glasses lack realism.</h2>
+        <div class="item item-compare-emo1">
+          <video poster="" id="emo1"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/emo/7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      <h2 class="text is-4"><br>In singing scenarios, Sonic demonstrates more precise articulation and a greater diversity of movements.</h2>
+
+        <div class="item item-compare-emo2">
+          <video poster="" id="emo2"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/emo/8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      <h2 class="title is-5"><br><br>For Loopy, we use their commercial API (jimeng.com).</h2>
+      <h2 class="text is-4">In this anime case 1, Sonic's results exhibit lip movements and lip appearance that more closely align with the original input, accompanied by blinking actions.</h2>
+        
+        <div class="item item-compare-loopy1">
+          <video poster="" id="loopy1"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/loopy/anime1.png.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      <h2 class="text is-4"><br>In the following case 2, it is observed that Loopy's head poses are monotonous, whereas Sonic appears more dynamic.</h2>
+
+        <div class="item item-compare-loopy2">
+          <video poster="" id="loopy2"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/loopy/elon.png.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      <h2 class="text is-4"><br>In case 3, Loopy exhibits a decrease in character similarity around 5~8s, and the lip-sync with the audio is inadequate. </h2>
+
+        <div class="item item-compare-loopy3">
+          <video poster="" id="loopy2"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/loopy/emma-watson-600.webp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      <h2 class="text is-4"><br>In case 4, during long-term generation, Sonic is not affected by motion frames, thereby avoiding the occurrence of artifacts at the end of the video.</h2>
+
+        <div class="item item-compare-loopy4">
+          <video poster="" id="loopy2"  controls   playsinline height="100%">
+            <source src="./results/comparison_videos/with_closed_source/loopy/leonnado.jpg.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Some images and audio are from <a
+            href="https://github.com/HumanAIGC/EMO">EMO</a>, <a
+            href="https://github.com/antgroup/echomimic">Echomimic</a>, <a
+            href="https://loopyavatar.github.io/">Loopy</a>. The webpage template was based on <a
+              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
