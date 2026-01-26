@@ -25,6 +25,7 @@ I received my M.S. from **Nanjing University** (advised by <a href="https://cs.n
 <span class='anchor' id='-news'></span>
 
 # 🔥 News
+- *2026*: &nbsp;**Two benchmark papers accepted to ICLR 2026**: MedLesionVQA, Human-MME
 - *2025*: &nbsp;🏆 **Championship in <a href="https://curebench.ai/">CURE-Bench @ NeurIPS 2025</a>** (1st out of 322 teams, both tracks)
 - *2025*: &nbsp;**Four papers accepted to CVPR / ACM MM 2025**, including <a href="https://github.com/jixiaozhong/Sonic">Sonic</a> (3k+ stars), GroundingFace, HunyuanPortrait, and DICE-Talk
 - *2024*: &nbsp;**Three papers accepted to ECCV / IJCAI**: DiffuMatting, UniM-OV3D
