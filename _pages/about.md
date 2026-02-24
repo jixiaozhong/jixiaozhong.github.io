@@ -18,19 +18,22 @@ I received my M.S. from Nanjing University, advised by <a href="https://cs.nju.e
 <span class='anchor' id='-news'></span>
 
 # News
-- *2026.01*: Two papers accepted to **ICLR 2026** (MedLesionVQA, Human-MME).
+- *2026.02*: Released **MedXIAOHE**, a medical multimodal foundation model featuring entity-aware pretraining, RL-based reasoning, and agentic training. SOTA across medical benchmarks, outperforming several closed-source systems. [[Paper]](https://arxiv.org/abs/2602.12705)
+- *2026.02*: Three papers accepted to **CVPR / ICLR 2026** (MedLesionVQA, etc.).
 - *2025.12*: Champion in <a href="https://curebench.ai/">CURE-Bench @ NeurIPS 2025</a> (1st out of 322 teams).
 - *2025.03*: Four papers accepted to **CVPR / ACM MM 2025** (Sonic, GroundingFace, HunyuanPortrait, DICE-Talk).
-- *2024.07*: Three papers accepted to **ECCV / IJCAI 2024** (DiffuMatting, UniM-OV3D).
+- *2024.07*: Two papers accepted to **ECCV / IJCAI 2024** (DiffuMatting, UniM-OV3D).
 - *2022.03*: Two papers accepted to **CVPR / ECCV 2022** (ColorFormer, SGPN).
 - *2021.09*: Three papers accepted to **NeurIPS / AAAI / ECCV 2021** (S2K, FCA, AE-TextSpotter).
-- *2020.06*: Champion in NTIRE 2020 Real-World SR Challenge @ CVPR.
+- *2020.06*: Champion in <a href="https://data.vision.ee.ethz.ch/cvl/ntire20/">NTIRE 2020 Real-World SR Challenge @ CVPR</a>.
 
 <span class='anchor' id='-publications'></span>
 
 # Publications
 
 ## Selected Publications
+
+{% include publications/medxiaohe.html %}
 
 {% include publications/cureflow.html %}
 
