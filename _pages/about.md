@@ -18,9 +18,10 @@ I received my M.S. from Nanjing University, advised by <a href="https://cs.nju.e
 <span class='anchor' id='-news'></span>
 
 # News
-- *2026.02*: Released **MedXIAOHE**, a medical multimodal foundation model featuring entity-aware pretraining, RL-based reasoning, and agentic training. SOTA across medical benchmarks, outperforming several closed-source systems. [[Paper]](https://arxiv.org/abs/2602.12705)
+- *2026.02*: Released **MedXIAOHE**, a medical vision-language foundation model pretrained on 640B tokens. SOTA across 30+ medical benchmarks, outperforming GPT-5.2 Thinking and Gemini 3.0 Pro (e.g., MMMU-Med 87.53, MedQA-USMLE 97.88, OmniMedVQA 83.40). [[Paper]](https://arxiv.org/abs/2602.12705)
+- *2026.02*: Released **DEEPMED**, a medical DeepResearch agent. +9.79% over base model across 7 medical benchmarks, outperforming larger medical reasoning and DR models. [[Paper]](https://arxiv.org/abs/2601.18496)
 - *2026.02*: Three papers accepted to **CVPR / ICLR 2026** (MedLesionVQA, etc.).
-- *2025.12*: Champion in <a href="https://curebench.ai/">CURE-Bench @ NeurIPS 2025</a> (1st out of 322 teams).
+- *2025.12*: Champion in <a href="https://curebench.ai/">CURE-Bench @ NeurIPS 2025</a> (1st out of 322 teams), the first competition on Agentic AI reasoning for drug decision-making in precision therapeutics.
 - *2025.03*: Four papers accepted to **CVPR / ACM MM 2025** (Sonic, GroundingFace, HunyuanPortrait, DICE-Talk).
 - *2024.07*: Two papers accepted to **ECCV / IJCAI 2024** (DiffuMatting, UniM-OV3D).
 - *2022.03*: Two papers accepted to **CVPR / ECCV 2022** (ColorFormer, SGPN).
@@ -34,6 +35,8 @@ I received my M.S. from Nanjing University, advised by <a href="https://cs.nju.e
 ## Selected Publications
 
 {% include publications/medxiaohe.html %}
+
+{% include publications/deepmed.html %}
 
 {% include publications/cureflow.html %}
 
