@@ -91,6 +91,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - 修改意见.md
 keep_files:
   - .git
   - .svn
